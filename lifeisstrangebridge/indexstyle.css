@@ -1,0 +1,66 @@
+﻿
+.container{
+    display:grid;
+ 
+    /*grid-template-rows:1fr 1fr 5fr;*/
+
+   /*width:100%*/
+   
+}
+.logo {
+    background-color: hotpink;
+    grid-row: 1 /span 1;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;
+    align-content: center;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.logo >img{
+    margin-left:4vh;
+    height:10vh;
+}
+.navbar{
+    background-color:darkred;
+    grid-row:2 /span 1;
+    height:10vh;
+}
+    .navbar > ul {
+        display: flex;
+        flex-direction:row;
+    
+            color:white;
+            font-size:3vh;
+            text-decoration:none;
+            justify-content:flex-start;
+            list-style-type:none;
+            align-items:center;
+            align-content:center;
+
+
+    }
+    .navbar > ul >  li {
+        margin-left:4vh;
+        margin-top:0;
+        margin-bottom:0;
+        /*flex-basis:1;*/
+        align-self:center;
+    }
+.content{
+    grid-row:3 /span 1;
+    background-image:url(/images/junkyard.jpg);
+    background-size:cover;
+    height:71vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+ 
+}
+.content > iframe{
+    margin-right:4vh;
+    
+}
